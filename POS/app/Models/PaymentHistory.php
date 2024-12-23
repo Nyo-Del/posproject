@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class PaymentHistory extends Model
+{
+    use HasFactory;
+    protected $fillable = ['user_name','phone','address','payslip_img','payment_method','order_code','total_amt'];
+}
